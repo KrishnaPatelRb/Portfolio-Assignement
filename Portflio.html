@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="main-section">
+        <section class="left-section">
+         <div class="left-content">
+            <img class="profile-image" src="./krishna.jpg" alt="profile image">
+            <div class="left-position-info" >UI Developer @Techolution</div>
+         </div>
+        </section>
+
+
+
+        <section class="right-section">
+         <div class="right-content">
+          <nav class="nav-bar">
+              <div class="nav-element" >Home</div>
+              <div onclick="locationToProfile()" class="nav-element" >Profile</div>
+              <div onclick="locationToSkills()" class="nav-element" >Skills</div>
+              <div onclick="locationToProjects()" class="nav-element" >Projects</div>
+              <div onclick="locationToContact()" class="nav-element" >Contact</div>
+          </nav>
+          <div class="right-middle-content">
+            <div class="hello-text">Hello, my name is</div>
+            <div class="right-section-name">Krishna Patel</div>
+            <div class="dev-text">And I'm a <b>UI Developer</b></div>
+          </div>
+         </div>
+        </section>
+    </section>
+    <section class="About-me-section" id="Profile">
+      <div class="about-me" >Profile</div>
+      <p class="about-me-para">I am a creative UI Developer</p>
+      
+      <div class="about-me-container">
+        <div class="about-me-left-container" >
+          <div class="about-me-header" >About me</div>
+          <div class="para">I am an allround developer. I am a creative programmer with good knowledge of Front-end technologies. I love structure and order and I also stand for quality. i love spending times on fixing little details and optimizing web apps. Also I like working workinng in a team. you will learn faster and much more, as the saying goes:two heads are better than one </div>
+        </div>
+        <div class="about-me-right-container para" >
+          <div class="about-me-header">Details</div>
+          <div> <b>Name:</b> </div>
+          <div class="my-name">Krishna patel</div>
+          <div><b>Age:</b></div>
+          <div class="age">24 years</div>
+          <div><b>Location:</b></div>
+          <div class="location">Ujjain (Madhya Pradesh)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Skills" class="skill-section">
+        <div class="skills">Skills</div>
+        <div class="skill-container">
+            <div class="skill-left-section">
+                <div class="skill-left-header">My Creative Skills and Experience</div>
+                <div class="skills-info para" >I am a great learner. I can present my idea well. i am proficient  in both Front-end and Back-end technology like Html, Css, Javascript, Java, React.js, Node.js, Express.js, Mongodb. I have work hard to sharpen those skills beacuse I feel that that the value of a great idea is lost if we can't present in a way that others can understand</div>
+            </div>
+            <div class="skill-right-section">
+                <label>HTML</label><br>
+                <progress value="90" max="100"></progress><br>
+                <label>CSS</label><br>
+                <progress value="70" max="100"></progress><br>
+                <label>JAVASCRIPT</label><br>
+                <progress value="80" max="100"></progress><br>
+                <label>REACT.JS</label><br>
+                <progress value="70" max="100"></progress><br>
+                <label>JAVA</label><br>
+                <progress value="60" max="100"></progress><br>
+                <label>MYSQL</label><br>
+                <progress value="80" max="100"></progress><br>
+            </div>
+        </div>   
+    </section>
+
+    <section id="Projects" class="Projects-sectionn">
+        <div class="project">Projects</div>
+      <div class="project-container">
+          <div class="img-div"><img class="imagess" src="Netflix.png" alt=""><div class="text">Netflix Clone</div></div>
+          <div class="img-div"> <img class="imagess" src="game.png" alt=""><div class="text">Puzzle Mania</div></div>
+          <div class="img-div"><img class="imagess" src="jarvis.png" alt=""><div class="text">Jarvis Assitance</div></div>
+          <div class="img-div"> <img class="imagess" src="mealfinder.png" alt=""><div class="text">Meal Finder</div></div>
+      </div>
+    </section>
+
+    <div id="Contact" class="contact-section">
+        <div class="contact-header">Contact me</div>
+        <div class="email">Email: kp5747462@gmail.com</div>
+        <div class="number">phone: 9179967987</div>
+        <div class="social-media">
+            <div class="icon">
+                <a href="https://github.com/KrishnaPatelRb" target="_blank"><i class="fa fa-github" style="color: black; font-size: 20px;" ></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/krishna.patel.rb/?hl=en" target="_blank"><i class="fa fa-instagram" style="color: black; font-size: 20px;" ></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/public/Krishna-Patel-rebel" target="_blank"><i class="fa fa-facebook" style=" font-size: 20px;" ></i></a>
+            </div>
+        </div>
+    </div> 
+</body>
+<script>
+function locationToProfile(){
+document.querySelector("#Profile").scrollIntoView({
+    behavior:"smooth"
+});
+}
+
+function locationToSkills(){
+document.querySelector("#Skills").scrollIntoView({
+    behavior:"smooth"
+});
+}
+
+function locationToProjects(){
+document.querySelector("#Projects").scrollIntoView({
+    behavior:"smooth"
+});
+}
+
+
+function locationToContact(){
+document.querySelector("#Contact").scrollIntoView({
+    behavior:"smooth"
+});
+}
+
+    </script>
+</html>
